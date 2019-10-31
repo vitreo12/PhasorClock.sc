@@ -23,22 +23,22 @@ void PhasorClock_Ctor(PhasorClock* unit)
     if (INRATE(1) == calc_FullRate) 
     {
         if(INRATE(2) == calc_FullRate) { 
-            Print("a_a\n");
+            //Print("a_a\n");
             SETCALC(PhasorClock_next_a_a);
         }
         else {
-            Print("a_k\n");
+            //Print("a_k\n");
             SETCALC(PhasorClock_next_a_k);
         }
     } 
     else 
     {
         if(INRATE(2) == calc_FullRate) {
-            Print("k_a\n");
+            //Print("k_a\n");
             SETCALC(PhasorClock_next_k_a);
         }
         else {
-            Print("k_k\n");
+            //Print("k_k\n");
             SETCALC(PhasorClock_next_k_k);
         }
     }
